@@ -40,16 +40,20 @@ export const CategoryBox = ({ category, setCategories, setDescription, categorie
           {category.open ? <ArrowUp /> : <ArrowDown />}
         </Pressable>
       </View>
-      {category.open && <View style={tw`border-l border-r border-b border-black p-6`}>
-        {
-          category.jokesData && category.jokesData.slice(0, category.count).map((item, secondIdx) => (
-            <JokeBox key={secondIdx} setDescription={setDescription} modalRef={modalRef} secondIdx={secondIdx} item={item} />
-          ))
-        }
-        {categories[idx].count < 4 && <SolidButton onPress={handleAddMoreData} style={tw`mt-4`}>
-          <Text>Add More Data</Text>
-        </SolidButton>}
-      </View>}
+      {
+        category.open && <View style={tw`border-l border-r border-b border-black p-6`}>
+          {
+            category.jokesData && category.jokesData.slice(0, category.count).map((item, secondIdx) => (
+              <JokeBox key={secondIdx} setDescription={setDescription} modalRef={modalRef} secondIdx={secondIdx} item={item} />
+            ))
+          }
+          {
+            categories[idx].count < 4 && <SolidButton onPress={handleAddMoreData} style={tw`mt-4`}>
+              <Text>Add More Data</Text>
+            </SolidButton>
+          }
+        </View>
+      }
     </View>
   );
 }
