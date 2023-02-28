@@ -18,8 +18,7 @@ export const Home = () => {
 
   const handleRefresh = () => {
     const temp = [];
-    for (let i = 0; i < categories.length; i++) {
-      const category = categories[i];
+    for (const category of categories) {
       const tempObject = {
         category: category.category,
         open: category.open,
