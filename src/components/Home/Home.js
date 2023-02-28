@@ -59,7 +59,7 @@ export const Home = () => {
     <ScrollView>
       <View style={tw`bg-gray-200 h-full px-10 py-7`}>
         <Text style={tw`text-center font-bold text-xl`}>Jokes</Text>
-        <SolidButton onPress={handleRefresh} style={tw`my-7`}>
+        <SolidButton disabled={loading} onPress={handleRefresh} style={tw`my-7`}>
           <Text>Refresh</Text>
         </SolidButton>
         <View style={tw`flex gap-y-10`}>
