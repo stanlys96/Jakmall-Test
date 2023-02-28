@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "test-jakmall",
+    "slug": "test-jakmall",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "test-jakmall"
+}
