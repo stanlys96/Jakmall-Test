@@ -66,7 +66,7 @@ export const Home = () => {
         <View style={tw`flex gap-y-10`}>
           {
             categories.sort(compare).map((category, idx) => (
-              <CategoryBox key={category.id} category={category} categories={categories} idx={idx} setDescription={setDescription} modalRef={modalRef} setCategories={setCategories} />
+              <CategoryBox key={category.category} category={category} categories={categories} idx={idx} setDescription={setDescription} modalRef={modalRef} setCategories={setCategories} />
             ))
           }
         </View>
