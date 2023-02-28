@@ -1,5 +1,5 @@
 import { Pressable as RNPressable, View, Text } from "react-native";
-import tw from "../styles";
+import tw from "../../../styles";
 
 export const JokeBox = ({ setDescription, modalRef, secondIdx, item }) => {
   const handleClickDescription = () => {

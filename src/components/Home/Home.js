@@ -5,7 +5,7 @@ import { Text, View, ScrollView } from 'react-native';
 import tw from '../../styles';
 import { compare } from '../../utils/helper';
 import { SolidButton } from '../Button';
-import { CategoryBox } from '../CategoryBox';
+import { CategoryBox } from './Components/CategoryBox';
 import { SimpleModal } from '../Modal';
 
 export const Home = () => {

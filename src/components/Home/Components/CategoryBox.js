@@ -1,8 +1,8 @@
 import { Text, View, ScrollView, Pressable as RNPressable } from 'react-native';
-import { SolidButton } from './Button';
-import Pressable from './Pressable';
-import tw from '../styles';
-import { ArrowDown, ArrowUp } from '../icons';
+import { SolidButton } from '../../Button';
+import Pressable from '../../Pressable';
+import tw from '../../../styles';
+import { ArrowDown, ArrowUp } from '../../../icons';
 import { JokeBox } from './JokeBox';
 
 export const CategoryBox = ({ category, setCategories, setDescription, categories, modalRef, idx }) => {
