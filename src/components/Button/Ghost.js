@@ -15,7 +15,7 @@ const Ghost = ({ children, variant, size, title, underline, disabled, style, ...
   const sizes = getSize(size);
   const colors = getColor(variant);
   const styles = Object.assign(
-    tw.style(tw`self-center bg-transparent`, sizes.radius, disabled && 'opacity-50'),
+    tw.style(tw`bg-transparent`, sizes.radius, disabled && 'opacity-50'),
     style
   );
 
